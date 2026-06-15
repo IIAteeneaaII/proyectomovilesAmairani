@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dart --version)",
+      "Bash(flutter create *)",
+      "Bash(flutter build *)"
+    ]
+  }
+}
