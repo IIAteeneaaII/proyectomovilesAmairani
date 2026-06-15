@@ -4,6 +4,7 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ghost_box/screens/game_screen.dart';
+import 'package:ghost_box/screens/ar_probe_screen.dart';
 import 'package:ghost_box/theme/kawaii_theme.dart';
 
 /// Home / title screen. Shows the game name, a floating background ghost and a
@@ -119,6 +120,17 @@ class _HomeScreenState extends State<HomeScreen>
                         context,
                         MaterialPageRoute(
                           builder: (_) => GameScreen(camera: widget.camera),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    // Real-ARCore mode (anchors the box to a real surface).
+                    KawaiiOutlinedButton(
+                      label: '📦 Probar AR',
+                      onTap: () => Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => ArProbeScreen(camera: widget.camera),
                         ),
                       ),
                     ),

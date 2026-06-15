@@ -7,6 +7,9 @@
       "Bash(flutter devices *)",
       "Bash(adb -s R5GYB2ZTTHM install -r build/app/outputs/flutter-apk/app-release.apk)",
       "Bash(flutter install *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Admin\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\arcore_flutter_plugin-0.1.0\\android"
     ]
   }
 }
