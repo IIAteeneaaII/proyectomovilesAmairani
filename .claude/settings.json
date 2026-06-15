@@ -3,7 +3,10 @@
     "allow": [
       "Bash(dart --version)",
       "Bash(flutter create *)",
-      "Bash(flutter build *)"
+      "Bash(flutter build *)",
+      "Bash(flutter devices *)",
+      "Bash(adb -s R5GYB2ZTTHM install -r build/app/outputs/flutter-apk/app-release.apk)",
+      "Bash(flutter install *)"
     ]
   }
 }
